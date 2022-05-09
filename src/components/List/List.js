@@ -1,8 +1,8 @@
 import React from 'react';
 import useList from './useList';
-import {ListStyled} from './list.style';
+import {ListStyled} from './List.style';
 
-const ListComponent = ({musicList}) => {
+export const ListComponent = ({musicList}) => {
     const {shownList} = useList({musicList});
 
     return (
@@ -15,7 +15,4 @@ const ListComponent = ({musicList}) => {
         </ListStyled>
     )
 };
-
-export default ListComponent;
-
 

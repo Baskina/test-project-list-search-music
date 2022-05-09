@@ -1,8 +1,10 @@
 import React from 'react';
 import useSearch from "./useSearch";
-import {SearchWrapperStyled, ErrorWrapper, LoadingWrapper} from './search.style'
+import {SearchWrapperStyled} from './Search.style'
+import {Error} from "../ErrorMessage/Error";
+import {Loader} from "../Loader/Loader";
 
-const SearchComponent = ({setMusicList}) => {
+export const SearchComponent = ({setMusicList}) => {
     const {
         changeMusic,
         errorMessageFromServer,
@@ -11,15 +13,12 @@ const SearchComponent = ({setMusicList}) => {
 
     return (
         <SearchWrapperStyled>
-            <ErrorWrapper>{errorMessageFromServer}</ErrorWrapper>
-            <LoadingWrapper>{loading && 'loading...'}</LoadingWrapper>
+            <Error errorMessage={errorMessageFromServer}/>
+            <Loader loading={loading} />
             <input type="search"
                    placeholder={'...lets music play forever'}
                    onChange={changeMusic}/>
         </SearchWrapperStyled>
     )
 };
-
-export default SearchComponent;
-
 

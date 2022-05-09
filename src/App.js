@@ -1,9 +1,5 @@
-import MusicPage from "./views/musicPage";
+import {MusicPage} from "./pages";
 
-const App = () => {
-    return (
-        <MusicPage/>
-    );
-}
+const App = () => <MusicPage/>;
 
 export default App;

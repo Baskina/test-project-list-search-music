@@ -21,14 +21,3 @@ export const SearchWrapperStyled = styled.div`
     }
   }
 `;
-
-export const LoadingWrapper = styled.div`
-  height: 2rem;
-  color: grey;
-`;
-
-export const ErrorWrapper = styled.div`
-  font-size: 1rem;
-  color: red;
-  min-height: 2rem;
-`;

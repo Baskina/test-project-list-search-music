@@ -1,0 +1,1 @@
+export const musicAPI = `https://itunes.apple.com/search?term=`;

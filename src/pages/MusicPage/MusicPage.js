@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import SearchComponent from "../../components/Search";
-import ListComponent from "../../components/List";
-import {PageWrapperStyled} from "./musicPage.style";
+import {SearchComponent, ListComponent} from "../../components";
+import {PageWrapperStyled} from "./MusicPage.style";
 
-const MusicPage = () => {
+export const MusicPage = () => {
     const [musicList, setMusicList] = useState([]);
     return (
         <PageWrapperStyled>
@@ -12,5 +11,3 @@ const MusicPage = () => {
         </PageWrapperStyled>
     )
 };
-
-export default MusicPage;
